@@ -1,0 +1,119 @@
+%!TEX TS-program = pdflatex
+%!TEX TS-options = -shell-escape
+\documentclass[%
+	paper=a4,
+	fontsize=10pt,
+	ngerman
+	]{scrartcl}
+	
+\usepackage{scrtime}
+\usepackage{etex}
+\usepackage{shellesc}					
+\usepackage[utf8]{inputenc}				
+\usepackage[final]{graphicx}			
+\usepackage{url}
+\usepackage{float}
+
+\usepackage{babel}					
+\usepackage[german=quotes]{csquotes}
+
+\usepackage[usenames,x11names,final]{xcolor}
+\usepackage{colortbl} % Für die Einfärbung von Zellen in Tabellen
+\definecolor{stdblue}{HTML}{00387A}
+\definecolor{dunkelgrau}{rgb}{0.8,0.8,0.8}
+\definecolor{gold}{rgb}{1,0.8431372549,0.0}
+\definecolor{rot}{rgb}{0.8,0.05,0.15}
+\definecolor{hellblau}{rgb}{0.5294117647,0.8078431373,0.9215686275}
+
+\makeatletter
+\usepackage[%
+%hidelinks,
+pdfpagelabels,
+bookmarksopen=true,
+bookmarksnumbered=true,
+linkcolor=stdblue,
+urlcolor=stdblue,
+plainpages=false,
+pagebackref,
+citecolor=black,
+hypertexnames=true,
+pdfauthor={auto-generated FireDebrisAnalyser},
+pdfborderstyle={/S/U},
+linkbordercolor=stdblue,
+colorlinks=true,
+backref=false]{hyperref}
+\hypersetup{final}
+\makeatother
+
+\usepackage{sourcecodepro}
+\usepackage[default]{sourcesanspro}
+\usepackage{nimbusmononarrow}
+\usepackage[babel=true,final,tracking=smallcaps]{microtype}
+\DisableLigatures{encoding = T1, family = tt* } 
+\usepackage{ellipsis}
+
+\usepackage{mathtools}					
+\usepackage{amssymb}					
+\usepackage[bigdelims]{newtxmath}		
+\allowdisplaybreaks						
+\usepackage{bm}							
+\usepackage{wasysym}					
+
+\usepackage{tabularx}
+\newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}
+
+\usepackage{scrpage2}
+\pagestyle{scrheadings}
+\usepackage[	top=1.5cm, 
+				bottom=2cm, 
+				left=2cm, 
+				right=2cm]{geometry} 		
+\clearscrheadfoot 
+\setkomafont{pagehead}{\bfseries }					
+\setkomafont{section}{\large}						
+\setkomafont{subsection}{\large}					
+\setkomafont{pagefoot}{\normalfont\footnotesize}	 
+\cfoot{\thepage}									
+\raggedbottom										
+\usepackage{setspace}								
+\setstretch{1.2}									
+\setlength{\parindent}{0pt}							
+\setlength{\parskip}{0pt}							
+
+\usepackage{multicol}
+\usepackage[shortlabels]{enumitem}
+\setlist{itemsep=0pt}
+\setlist[enumerate]{font=\sffamily\bfseries}
+\setlist[itemize]{label=$\bullet$}
+\usepackage{tabularx}
+\usepackage{tikz}
+
+\begin{document}
+	
+%\begin{tabular}{|p{.2\textwidth}p{.22\textwidth}p{.22\textwidth}p{.22\textwidth}|}
+%	\hline 
+%	\multicolumn{2}{|l}{\textbf{Vorauswertung}} &\textbf{Probenbezeichnung:}& filenameTemp \\ 
+%	\textbf{Datum:} & dateTemp &\textbf{Uhrzeit:} & time Uhr \\
+%	\textbf{Durchführend:} & usernameTemp & \textbf{Bericht erzeugt:}& reportDateTemp\\
+%	\textbf{Genutztes Gerät:} & deviceTemp & \textbf{Programm:} & programTemp \\
+%	\hline 
+%\end{tabular}
+
+\begin{tabular}{|p{.2\textwidth}p{.22\textwidth}p{.22\textwidth}p{.22\textwidth}|}
+\hline 
+\multicolumn{2}{|l}{\textbf{Didaktische Darstellung des Sortierprozesses}} &\textbf{Jonas Stübbe}& \\
+\textbf{Datum:} & dateVar &\textbf{Uhrzeit:} & timeVar \\ 
+\textbf{Algorithmus:} & algoVar &\textbf{Datentyp:} &  datatypeVar \\ 
+\hline 
+\end{tabular}
+
+{\singlespacing
+
+%\tableofcontents}%
+
+\section{Sortierschritte}
+
+
+
+\end{document}
+
